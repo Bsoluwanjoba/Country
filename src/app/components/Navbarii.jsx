@@ -16,11 +16,11 @@ export default function Navbar() {
    
   return (
     <div>
-        <nav>
+        <nav >
            
             <div className='flex'> 
               <Image src='/android-chrome-512x512.png' width={50} height={50} alt="logo" className='md:hidden items-center'/>
-            <ul className={`bg-[green] md:bg-transparent  md:text-white md:gap-3    md:relative md:flex md:flex-row flex flex-col fixed h-[100vh] md:h-[100%] w-[100%] top-0 bottom-0 left-0 items-center md:justify-center justify-between transition-transform transform ease-in-out duration-500 py-10 ${showNav ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
+            <ul className={`bg-[green] md:bg-transparent  md:text-white md:gap-3    md:relative md:flex md:flex-row flex flex-col fixed h-[100vh] md:h-[100%] w-[100%] top-0 bottom-0 left-0 items-center md:justify-center justify-center transition-transform transform ease-in-out duration-500 py-10 ${showNav ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}`}>
               
                 <li><MdCancel className='cursor-pointer md:hidden text-3xl' onClick={navbar}/></li>
                 <Link href='/' className='md:hover:bg-[green] md:p-3 md:rounded-lg md:duration-500 md:ease-in-out hover:bg-black p-3 rounded-lg duration-500 ease-in-out '> <li>All</li></Link>
